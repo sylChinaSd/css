@@ -1,0 +1,776 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"c",
+				"class	Attr"
+			],
+			[
+				"lo",
+				"location"
+			],
+			[
+				"text",
+				"text-danger"
+			],
+			[
+				"va",
+				"validate"
+			],
+			[
+				"boot",
+				"bootstrapValidator"
+			],
+			[
+				"onc",
+				"onclick	Attr"
+			],
+			[
+				"tex",
+				"textContent"
+			],
+			[
+				"aria",
+				"aria-valuenow"
+			],
+			[
+				"col",
+				"col-xs-6"
+			],
+			[
+				"col-",
+				"col-sm-offset-2"
+			],
+			[
+				"back",
+				"background-image"
+			],
+			[
+				"st",
+				"style	Tag"
+			],
+			[
+				"fun",
+				"function〔keyword〕"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "me.html",
+			"settings":
+			{
+				"buffer_size": 3961,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "addressManage.html",
+			"settings":
+			{
+				"buffer_size": 6385,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "addressAdd.html",
+			"settings":
+			{
+				"buffer_size": 2121,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "less/_custom.less",
+			"settings":
+			{
+				"buffer_size": 7719,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "classify.html",
+			"settings":
+			{
+				"buffer_size": 6197,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "less/bootstrap/variables.less",
+			"settings":
+			{
+				"buffer_size": 27365,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "css/__main.css",
+			"settings":
+			{
+				"buffer_size": 190610,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 311.0,
+		"last_filter": "Package Control: i",
+		"selected_items":
+		[
+			[
+				"Package Control: i",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: ",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: in",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: ins",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: inst",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 528.0
+	},
+	"console":
+	{
+		"height": 174.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/E/SYL/msp/orderQuery.html",
+		"/E/SYL/msp/shoppingCart.html",
+		"/E/SYL/msp/order.html",
+		"/E/SYL/msp/productDetail.html",
+		"/E/SYL/msp/index.html",
+		"/E/SYL/msp/addressEdit.html",
+		"/E/SYL/msp/concern.html",
+		"/E/SYL/WebstormProjects/wechat_business/index.html",
+		"/E/SYL/msp/css/__main.css",
+		"/E/SYL/WebstormProjects/wechat_business/less/_custom.less",
+		"/E/SYL/msp/classify.html",
+		"/E/SYL/msp/me.html",
+		"/E/SYL/WebstormProjects/wechat_business/addressManage.html",
+		"/E/SYL/WebstormProjects/wechat_business/me.html",
+		"/E/SYL/msp/login.html",
+		"/E/SYL/msp/skins/icheck/square/red.css",
+		"/E/SYL/msp/css/bootstrap-switch.min.css",
+		"/E/SYL/msp/lostPassword.html",
+		"/E/SYL/msp/docs/dist/js/bootstrap.js",
+		"/E/SYL/msp/less/bootstrap/variables.less",
+		"/E/SYL/msp/less/bootstrap/navs.less",
+		"/E/SYL/msp/less/bootstrap/navbar.less",
+		"/E/SYL/msp/less/bootstrap/buttons.less",
+		"/E/SYL/msp/less/_custom.less",
+		"/E/SYL/WebstormProjects/wechat_business/productDetail.html",
+		"/E/SYL/msp/less/__main.less",
+		"/E/SYL/msp/register.html",
+		"/E/SYL/msp/registerContent.html",
+		"/C/Users/SYL/AppData/Roaming/Sublime Text 3/Packages/User/CodeFormatter.sublime-settings",
+		"/C/Users/SYL/AppData/Roaming/Sublime Text 3/Packages/CodeFormatter/CodeFormatter.sublime-settings",
+		"/C/Users/SYL/AppData/Roaming/Sublime Text 3/Packages/CodeFormatter/Default (Windows).sublime-keymap",
+		"/D/programmes/sublime_workspace/msp/css/__main.css",
+		"/D/programmes/sublime_workspace/msp/less/bootstrap/badges.less",
+		"/D/programmes/sublime_workspace/msp/index.html",
+		"/D/programmes/sublime_workspace/msp/less/bootstrap/variables.less",
+		"/D/programmes/sublime_workspace/msp/less/fontAwesome/variables.less",
+		"/D/programmes/sublime_workspace/msp/less/fontAwesome/font-awesome.less",
+		"/D/programmes/sublime_workspace/msp/less/__main.less",
+		"/D/programmes/sublime_workspace/msp/less/bootstrap.less",
+		"/D/ss.html",
+		"/C/Users/SYL/AppData/Roaming/Sublime Text 3/Packages/Emmet Css Snippets/README.md",
+		"/C/Users/SYL/AppData/Roaming/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
+		"/C/Users/SYL/AppData/Roaming/Sublime Text 3/Packages/Emmet/Default (Windows).sublime-keymap",
+		"/C/Users/SYL/AppData/Roaming/Sublime Text 3/Packages/Emmet/Emmet.sublime-settings",
+		"/C/Users/SYL/AppData/Roaming/Sublime Text 3/Packages/EmmetOneLine/Default (Windows).sublime-keymap",
+		"/C/Users/SYL/AppData/Roaming/Sublime Text 3/Packages/User/Default (Windows).sublime-keymap",
+		"/C/Users/SYL/AppData/Roaming/Sublime Text 3/Packages/Autoprefixer/Autoprefixer.sublime-settings",
+		"/C/Users/SYL/AppData/Roaming/Sublime Text 3/Packages/Alignment/Base File.sublime-settings",
+		"/C/Users/SYL/Desktop/ss.js",
+		"/C/Users/SYL/AppData/Roaming/Sublime Text 3/Packages/BracketHighlighter/bh_core.sublime-settings",
+		"/C/Users/SYL/AppData/Roaming/Sublime Text 3/Packages/User/Preferences.sublime-settings"
+	],
+	"find":
+	{
+		"height": 36.0
+	},
+	"find_in_files":
+	{
+		"height": 102.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"logo",
+			"./orderQuery.html",
+			"border-",
+			"waining",
+			"text-mute",
+			"grid-item",
+			"=\"\">",
+			"login-body",
+			"img-resp",
+			"shopping-count",
+			"col-xs-4",
+			"=\"#\"><",
+			"pill",
+			"#",
+			"over",
+			"circle",
+			"p",
+			"address",
+			"small",
+			"container",
+			"file",
+			">",
+			"plus",
+			"shopping-cart",
+			"nav-btn-sm",
+			"p1_",
+			"responsive",
+			"arrow",
+			"shopping-cart",
+			"nav-btn-warning-msp",
+			"300",
+			"pd1",
+			"list-group-item",
+			"list-group-item-msp",
+			"navbar-nav-shopping",
+			"#",
+			"list-group-item-msp",
+			"rememberMe",
+			"navbar-nav",
+			"switch-small",
+			"sm",
+			"col-xs-3",
+			"navbar-top-msp",
+			"tip",
+			"getscrollh",
+			"scroll",
+			"scrollby",
+			"fixed",
+			"></",
+			"全部评论、好评、差评、有图",
+			"evaluation",
+			"4",
+			"text-muted",
+			"@gray-lighter",
+			"white",
+			"bg-",
+			"black",
+			"nav-pills-msp",
+			"count-modify-msp",
+			"+",
+			"left",
+			"text-overf",
+			"button-size",
+			".btn-sm",
+			"bargain-price",
+			"fade",
+			"nav-pills",
+			".nav-pills",
+			"pills",
+			"<strong>",
+			"nav-pills-msp",
+			"nav-pills",
+			"active",
+			"tab",
+			"1",
+			"btn-danger",
+			"3",
+			"#",
+			"10",
+			"row",
+			"large",
+			"bold",
+			"text-",
+			"process",
+			"form-control",
+			"danger",
+			"text-danger",
+			"10",
+			"sm",
+			"form-horizontal",
+			"form-group",
+			"path",
+			"fontpath",
+			"font",
+			"variables",
+			"ignore",
+			"reflect",
+			"encode",
+			"incre",
+			"json",
+			"line",
+			"merge",
+			"remove",
+			"reomve",
+			"split",
+			"comment",
+			"comments",
+			"Abbreviation",
+			"wrap",
+			"pair",
+			"match",
+			"ctrl+d",
+			"item",
+			"balance",
+			"header",
+			"class",
+			"distinctio",
+			"lorem",
+			"\"></",
+			"li",
+			"href",
+			" ;",
+			"toggle",
+			"toogle",
+			"td",
+			"li",
+			"a",
+			"li"
+		],
+		"highlight": false,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"ddd"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": false
+	},
+	"groups":
+	[
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "me.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3961,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1701,
+								1701
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 606.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "addressManage.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 6385,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2123,
+								2123
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 772.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "addressAdd.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2121,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1961,
+								1961
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "less/_custom.less",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 7719,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								7659,
+								7659
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 10152.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "classify.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 6197,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1570,
+								1570
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "less/bootstrap/variables.less",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 27365,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								26682,
+								26691
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 16644.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "css/__main.css",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 190610,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								18839,
+								18839
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 21252.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 28.0
+	},
+	"input":
+	{
+		"height": 38.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "msp.sublime-project",
+	"replace":
+	{
+		"height": 52.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"add",
+				"E:\\SYL\\msp\\addressManage.html"
+			],
+			[
+				"_cus",
+				"E:\\SYL\\msp\\less\\_custom.less"
+			],
+			[
+				"me",
+				"E:\\SYL\\msp\\me.html"
+			],
+			[
+				"_cu",
+				"E:\\SYL\\msp\\less\\_custom.less"
+			],
+			[
+				"cla",
+				"E:\\SYL\\msp\\classify.html"
+			],
+			[
+				"c",
+				"E:\\SYL\\msp\\classify.html"
+			],
+			[
+				"v",
+				"E:\\SYL\\msp\\less\\bootstrap\\variables.less"
+			],
+			[
+				"_c",
+				"E:\\SYL\\msp\\less\\_custom.less"
+			],
+			[
+				"cl",
+				"E:\\SYL\\msp\\classify.html"
+			],
+			[
+				"_",
+				"E:\\SYL\\msp\\less\\_custom.less"
+			],
+			[
+				"order",
+				"E:\\SYL\\msp\\order.html"
+			],
+			[
+				"a",
+				"E:\\SYL\\msp\\addressEdit.html"
+			],
+			[
+				"shp",
+				"E:\\SYL\\msp\\shoppingCart.html"
+			],
+			[
+				"ad",
+				"E:\\SYL\\msp\\addressManage.html"
+			],
+			[
+				"in",
+				"E:\\SYL\\msp\\index.html"
+			],
+			[
+				"or",
+				"E:\\SYL\\msp\\order.html"
+			],
+			[
+				"shop",
+				"E:\\SYL\\msp\\shoppingCart.html"
+			],
+			[
+				"cus",
+				"E:\\SYL\\msp\\less\\_custom.less"
+			],
+			[
+				"va",
+				"E:\\SYL\\msp\\less\\bootstrap\\variables.less"
+			],
+			[
+				"prod",
+				"E:\\SYL\\msp\\productDetail.html"
+			],
+			[
+				"__",
+				"E:\\SYL\\msp\\css\\__main.css"
+			],
+			[
+				"s",
+				"E:\\SYL\\msp\\shoppingCart.html"
+			],
+			[
+				"adr",
+				"E:\\SYL\\WebstormProjects\\wechat_business\\addressManage.html"
+			],
+			[
+				"",
+				"Package Control Messages"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 150.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

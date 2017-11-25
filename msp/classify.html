@@ -1,0 +1,245 @@
+<!-- 分类页面 -->
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+
+  <link href="css/__main.css" rel="stylesheet">
+  <link href="css/bootstrapValidator.min.css" rel="stylesheet">
+
+  <script src="js/jquery-1.11.3.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/masonry.pkgd.min.js"></script>
+  <script src="js/imagesloaded.pkgd.min.js"></script>
+  <script src="js/classify.js" type="text/javascript"></script>
+  <!--<script type="text/javascript">
+        $(document).ready(function() {
+            //由于有图片。所以应该在所有图片下载完成之后再启动图片墙布局
+            //推荐使用js插件imagesLoaded，可通过imagesloaded.desandro.com.下载
+            var $masonryGrid = $('.grid');
+            $masonryGrid.masonry({
+                // set itemSelector so .grid-sizer is not used in layout
+                itemSelector: '.grid-item',
+                // use element for option
+                columnWidth: '.grid-sizer',
+                //below stamp
+                stamp:".stamp",
+                percentPosition: true
+            });
+            $masonryGrid.imagesLoaded().progress( function() {
+              $masonryGrid.masonry('layout');
+            });
+        });
+    </script>-->
+
+  <title>商品分类</title>
+</head>
+<body class="login-body msp-padding-bottom">
+  <div class="container">
+    <!-- 商品大类导航栏 -->
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#pro-type" aria-expanded="false">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a href="#" class="navbar-brand">
+            <span class="text-danger"> <strong>MSP商品分类</strong>
+            </span>
+          </a>
+        </div>
+        <div class="collapse navbar-collapse" id="pro-type">
+          <ul class="nav navbar-nav">
+            <li class="">
+              <a href="#">品牌男装</a>
+            </li>
+            <li class="">
+              <a href="#">潮流女装</a>
+            </li>
+            <li class="">
+              <a href="#">个护化妆</a>
+            </li>
+            <li class="">
+              <a href="#">家具家纺</a>
+            </li>
+            <li class="">
+              <a href="#">母婴童装</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- 商品小类图片墙 -->
+    <div class="grid">
+      <div class="grid-sizer"></div>
+      <div class="stamp text-muted"> <strong>当季流行</strong>
+      </div>
+      <div class="grid-item">
+        <a href="#">
+          <img src="./images/classify/man/8.jpg" class="img-responsive img-thumbnail">
+          <p class="text-center text-muted small">短袖T恤</p>
+        </a>
+      </div>
+      <div class="grid-item">
+        <a href="#">
+          <img src="./images/classify/man/1.jpg" class="img-responsive img-thumbnail">
+          <p class="text-center text-muted small">牛仔裤</p>
+        </a>
+      </div>
+      <div class="grid-item">
+        <a href="#">
+          <img src="./images/classify/man/9.jpg" class="img-responsive img-thumbnail">
+          <p class="text-center text-muted small">长袖衬衫</p>
+        </a>
+      </div>
+      <div class="grid-item">
+        <a href="#">
+          <img src="./images/classify/man/3.jpg" class="img-responsive img-thumbnail">
+          <p class="text-center text-muted small">休闲裤</p>
+        </a>
+      </div>
+      <div class="grid-item">
+        <a href="#">
+          <img src="./images/classify/man/12.jpg" class="img-responsive img-thumbnail">
+          <p class="text-center text-muted small">背心马甲</p>
+        </a>
+      </div>
+      <div class="grid-item">
+        <a href="#">
+          <img src="./images/classify/man/6.jpg" class="img-responsive img-thumbnail">
+          <p class="text-center text-muted small">宽松长T</p>
+        </a>
+      </div>
+    </div>
+
+    <!-- 上装 -->
+    <div class="grid">
+      <div class="grid-sizer"></div>
+      <div class="stamp text-muted">
+        <strong>男士上装</strong>
+      </div>
+      <div class="grid-item">
+        <a href="#">
+          <img src="./images/classify/man/8.jpg" class="img-responsive img-thumbnail">
+          <p class="text-center text-muted small">短袖T恤</p>
+        </a>
+      </div>
+      <div class="grid-item">
+        <a href="#">
+          <img src="./images/classify/man/7.jpg" class="img-responsive img-thumbnail">
+          <p class="text-center text-muted small">短袖衬衫</p>
+        </a>
+      </div>
+      <div class="grid-item">
+        <a href="#">
+          <img src="./images/classify/man/9.jpg" class="img-responsive img-thumbnail">
+          <p class="text-center text-muted small">长袖衬衫</p>
+        </a>
+      </div>
+      <div class="grid-item">
+        <a href="#">
+          <img src="./images/classify/man/13.jpg" class="img-responsive img-thumbnail">
+          <p class="text-center text-muted small">印花T恤</p>
+        </a>
+      </div>
+      <div class="grid-item">
+        <a href="#">
+          <img src="./images/classify/man/10.jpg" class="img-responsive img-thumbnail">
+          <p class="text-center text-muted small">牛仔衬衫</p>
+        </a>
+      </div>
+      <div class="grid-item">
+        <a href="#">
+          <img src="./images/classify/man/12.jpg" class="img-responsive img-thumbnail">
+          <p class="text-center text-muted small">背心马甲</p>
+        </a>
+      </div>
+      <div class="grid-item">
+        <a href="#">
+          <img src="./images/classify/man/7.jpg" class="img-responsive img-thumbnail">
+          <p class="text-center text-muted small">印花卫衣</p>
+        </a>
+      </div>
+      <div class="grid-item">
+        <a href="#">
+          <img src="./images/classify/man/6.jpg" class="img-responsive img-thumbnail">
+          <p class="text-center text-muted small">宽松长T</p>
+        </a>
+      </div>
+    </div>
+
+    <!-- 图片墙2 -->
+    <div class="grid">
+      <div class="grid-sizer"></div>
+      <div class="stamp text-muted">
+        <strong>男士下装</strong>
+      </div>
+      <div class="grid-item">
+        <a href="#">
+          <img src="./images/classify/man/1.jpg" class="img-responsive img-thumbnail">
+          <p class="text-center text-muted small">牛仔裤</p>
+        </a>
+      </div>
+      <div class="grid-item">
+        <a href="#">
+          <img src="./images/classify/man/3.jpg" class="img-responsive img-thumbnail">
+          <p class="text-center text-muted small">休闲裤</p>
+        </a>
+      </div>
+      <div class="grid-item">
+        <a href="#">
+          <img src="./images/classify/man/4.jpg" class="img-responsive img-thumbnail">
+          <p class="text-center text-muted small">阔脚裤</p>
+        </a>
+      </div>
+      <div class="grid-item">
+        <a href="#">
+          <img src="./images/classify/man/2.jpg" class="img-responsive img-thumbnail">
+          <p class="text-center text-muted small">潮流慢跑裤</p>
+        </a>
+      </div>
+      <div class="grid-item">
+        <a href="#">
+          <img src="./images/classify/man/5.jpg" class="img-responsive img-thumbnail">
+          <p class="text-center text-muted small">小脚牛仔裤</p>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- 底部的导航栏 -->
+  <nav class="navbar navbar-default navbar-fixed-bottom ">
+    <div class="container">
+      <div class="row">
+        <ul class="nav navbar-fixed-bottom-msp">
+          <li role="presentation" class="col-xs-3">
+            <a href="./index.html"> <i class="fa fa-home fa-lg text-muted"></i>
+            </a>
+          </li>
+          <li role="presentation" class="col-xs-3 shopping-cart-msp">
+            <a href="./shoppingCart.html"> <i class="fa fa-shopping-cart fa-lg text-muted"></i>
+              <span class="badge badge-msp">99</span>
+            </a>
+          </li>
+          <li role="presentation" class="col-xs-3">
+            <a href="./concern.html">
+              <i class="fa fa-heart fa-lg text-danger"></i>
+            </a>
+          </li>
+          <li role="presentation" class="col-xs-3">
+            <a href="./me.html">
+              <i class="fa fa-user fa-lg text-muted"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</body>
+</html>

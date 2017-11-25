@@ -1,0 +1,295 @@
+<!-- 找回密码页面 -->
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+
+    <link href="css/__main.css" rel="stylesheet">
+    <link href="css/bootstrapValidator.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap-switch.min.css">
+    <link rel="stylesheet" href="./skins/icheck/flat/red.css">
+
+    <script src="js/jquery-1.11.3.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrapValidator.min.js"></script>
+    <script src="js/bootstrap-switch.min.js"></script>
+    <script src="js/icheck.min.js"></script>
+    <script src="js/concern.js" type="text/javascript"></script>
+    <!--<script type="text/javascript">   
+        function selectAll(btn){
+            var icon = $(btn).find("i");
+            var checkboxs = $('input[type=checkbox]');
+            if(icon.hasClass("fa-toggle-off")){
+                icon.removeClass("fa-toggle-off");
+                icon.addClass("fa-toggle-on");
+                //选择全部                
+                checkboxs.iCheck("check");
+            }else if(icon.hasClass("fa-toggle-on")){
+                icon.addClass("fa-toggle-off");
+                icon.removeClass("fa-toggle-on");
+                //取消选择全部
+                checkboxs.iCheck("uncheck");
+            }
+        }
+        $(document).ready(function() {      
+             //使用icheck
+            $('input[type=checkbox]').iCheck({
+                checkboxClass: 'icheckbox_flat-red',
+                radioClass: 'iradio_flat-red',
+                increaseArea:"30%"
+            });               
+        });
+    </script>-->
+    <title>关注商品</title>
+</head>
+<body class="login-body msp-padding-bottom">
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <ul class="nav navbar-nav navbar-nav-shopping">
+                <li class="col-xs-4">
+                    <a onclick="selectAll(this);">
+                        <p>全选</p>
+                        <p> <i class="fa fa-toggle-on fa-2x"></i>
+                        </p>
+                    </a>
+                </li>
+                <li class="col-xs-4">
+                    <a>
+                        <p>删除</p>
+                        <p> <i class="fa fa-trash-o fa-2x"></i>
+                        </p>
+                    </a>
+                </li>
+                <li class="col-xs-4">
+                    <a>
+                        <p>添加</p>
+                        <p>
+                            <i class="fa fa-cart-plus fa-2x"></i>
+                        </p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- 商品信息 -->
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+               
+            </div>
+        </div>
+    </div>
+     <ul class="list-group">
+                    <li class="list-group-item msp-shopping-item">
+                        <div class="checkbox pull-left">
+                            <input type="checkbox" checked></div>
+                        <img class="pull-left img-responsive" src="images/pd2.jpg" alt="pd2.jpg">
+                        <ul class="col-xs-6">
+                            <li class="shopping-product-name">
+                                <a href="./productDetail.html">
+                                    JNBY江南布衣2016夏新商场同款简洁大方圆领T恤5G561001 001JNBY江南布衣2016夏新商场同款简洁大方圆领T恤5G561001 001JNBY江南布衣2016夏新商场同款简洁大方圆领T恤5G561001 001JNBY江南布衣2016夏新商场同款简洁大方圆领T恤5G561001 001JNBY江南布衣2016夏新商场同款简洁大方圆领T恤5G561001 001JNBY江南布衣2016夏新商场同款简洁大方圆领T恤5G561001 001
+                                </a>
+                            </li>
+                            <li class="shopping-bargain-price">
+                                现价:
+                                <i class="fa fa-jpy"></i>
+                                99.0
+                            </li>
+                            <li class="shopping-count">
+                                <div class="input-group input-group-sm col-xs-3 count-modify-msp">
+                                    <span class="input-group-addon">-</span>
+                                    <input type="text" name="count" class="form-control text-center" value="1">
+                                    <span class="input-group-addon">+</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="list-group-item msp-shopping-item">
+                        <div class="checkbox pull-left">
+                            <input type="checkbox" checked></div>
+                        <img class="pull-left img-responsive" src="images/pd1.jpg" alt="pd1.jpg">
+                         <ul class="col-xs-6">
+                            <li class="shopping-product-name">
+                                <a href="./productDetail.html">
+                                    JNBY江南布衣2016夏新商场同款简洁大方圆领T恤5G561001 001JNBY江南布衣2016夏新商场同款简洁大方圆领T恤5G561001 001JNBY江南布衣2016夏新商场同款简洁大方圆领T恤5G561001 001JNBY江南布衣2016夏新商场同款简洁大方圆领T恤5G561001 001JNBY江南布衣2016夏新商场同款简洁大方圆领T恤5G561001 001JNBY江南布衣2016夏新商场同款简洁大方圆领T恤5G561001 001
+                                </a>
+                            </li>
+                            <li class="shopping-bargain-price">
+                                现价:
+                                <i class="fa fa-jpy"></i>
+                                99.0
+                            </li>
+                            <li class="shopping-count">
+                                <div class="input-group input-group-sm col-xs-3 count-modify-msp">
+                                    <span class="input-group-addon">-</span>
+                                    <input type="text" name="count" class="form-control text-center" value="1">
+                                    <span class="input-group-addon">+</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="list-group-item msp-shopping-item">
+                        <div class="checkbox pull-left">
+                            <input type="checkbox" checked></div>
+                        <img class="pull-left img-responsive" src="images/pd2.jpg" alt="pd2.jpg">
+                         <ul class="col-xs-6">
+                            <li class="shopping-product-name">
+                                <a href="./productDetail.html">
+                                    JNBY江南布衣2016夏新商场同款简洁大方圆领T恤5G561001 001JNBY江南布衣2016夏新商场同款简洁大方圆领T恤5G561001 001JNBY江南布衣2016夏新商场同款简洁大方圆领T恤5G561001 001JNBY江南布衣2016夏新商场同款简洁大方圆领T恤5G561001 001JNBY江南布衣2016夏新商场同款简洁大方圆领T恤5G561001 001JNBY江南布衣2016夏新商场同款简洁大方圆领T恤5G561001 001
+                                </a>
+                            </li>
+                            <li class="shopping-bargain-price">
+                                现价:
+                                <i class="fa fa-jpy"></i>
+                                99.0
+                            </li>
+                            <li class="shopping-count">
+                                <div class="input-group input-group-sm col-xs-3 count-modify-msp">
+                                    <span class="input-group-addon">-</span>
+                                    <input type="text" name="count" class="form-control text-center" value="1">
+                                    <span class="input-group-addon">+</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="list-group-item msp-shopping-item">
+                        <div class="checkbox pull-left">
+                            <input type="checkbox" checked></div>
+                        <img class="pull-left img-responsive" src="images/pd3.jpg" alt="pd3.jpg">
+                         <ul class="col-xs-6">
+                            <li class="shopping-product-name">
+                                <a href="./productDetail.html">
+                                    JNBY江南布衣2016夏新商场同款简洁大方圆领T恤5G561001 001JNBY江南布衣2016夏新商场同款简洁大方圆领T恤5G561001 001JNBY江南布衣2016夏新商场同款简洁大方圆领T恤5G561001 001JNBY江南布衣2016夏新商场同款简洁大方圆领T恤5G561001 001JNBY江南布衣2016夏新商场同款简洁大方圆领T恤5G561001 001JNBY江南布衣2016夏新商场同款简洁大方圆领T恤5G561001 001
+                                </a>
+                            </li>
+                            <li class="shopping-bargain-price">
+                                现价:
+                                <i class="fa fa-jpy"></i>
+                                89.0
+                            </li>
+                            <li class="shopping-count">
+                                <div class="input-group input-group-sm col-xs-3 count-modify-msp">
+                                    <span class="input-group-addon">-</span>
+                                    <input type="text" name="count" class="form-control text-center" value="1">
+                                    <span class="input-group-addon">+</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="list-group-item msp-shopping-item">
+                        <div class="checkbox pull-left">
+                            <input type="checkbox" checked></div>
+                        <img class="pull-left img-responsive" src="images/pd3.jpg" alt="pd3.jpg">
+                         <ul class="col-xs-6">
+                            <li class="shopping-product-name">
+                                <a href="./productDetail.html">
+                                    JNBY江南布衣2016夏新商场同款简洁大方圆领T恤5G561001 001JNBY江南布衣2016夏新商场同款简洁大方圆领T恤5G561001 001JNBY江南布衣2016夏新商场同款简洁大方圆领T恤5G561001 001JNBY江南布衣2016夏新商场同款简洁大方圆领T恤5G561001 001JNBY江南布衣2016夏新商场同款简洁大方圆领T恤5G561001 001JNBY江南布衣2016夏新商场同款简洁大方圆领T恤5G561001 001
+                                </a>
+                            </li>
+                            <li class="shopping-bargain-price">
+                                现价:
+                                <i class="fa fa-jpy"></i>
+                                99.0
+                            </li>
+                            <li class="shopping-count">
+                                <div class="input-group input-group-sm col-xs-3 count-modify-msp">
+                                    <span class="input-group-addon">-</span>
+                                    <input type="text" name="count" class="form-control text-center" value="1">
+                                    <span class="input-group-addon">+</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="list-group-item msp-shopping-item">
+                        <div class="checkbox pull-left">
+                            <input type="checkbox" checked></div>
+                        <img class="pull-left img-responsive" src="images/pd2.jpg" alt="pd2.jpg">
+                         <ul class="col-xs-6">
+                            <li class="shopping-product-name">
+                                <a href="./productDetail.html">
+                                    JNBY江南布衣2016夏新商场同款简洁大方圆领T恤5G561001 001JNBY江南布衣2016夏新商场同款简洁大方圆领T恤5G561001 001JNBY江南布衣2016夏新商场同款简洁大方圆领T恤5G561001 001JNBY江南布衣2016夏新商场同款简洁大方圆领T恤5G561001 001JNBY江南布衣2016夏新商场同款简洁大方圆领T恤5G561001 001JNBY江南布衣2016夏新商场同款简洁大方圆领T恤5G561001 001
+                                </a>
+                            </li>
+                            <li class="shopping-bargain-price">
+                                现价:
+                                <i class="fa fa-jpy"></i>
+                                199.0
+                            </li>
+                            <li class="shopping-count">
+                                <div class="input-group input-group-sm col-xs-3 count-modify-msp">
+                                    <span class="input-group-addon">-</span>
+                                    <input type="text" name="count" class="form-control text-center" value="1">
+                                    <span class="input-group-addon">+</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="list-group-item msp-shopping-item">
+                        <div class="checkbox pull-left">
+                            <input type="checkbox" checked></div>
+                        <img class="pull-left img-responsive" src="images/pd1.jpg" alt="pd1.jpg">
+                         <ul class="col-xs-6">
+                            <li class="shopping-product-name">
+                                <a href="./productDetail.html">
+                                    JNBY江南布衣2016夏新商场同款简洁大方圆领T恤5G561001 001JNBY江南布衣2016夏新商场同款简洁大方圆领T恤5G561001 001JNBY江南布衣2016夏新商场同款简洁大方圆领T恤5G561001 001JNBY江南布衣2016夏新商场同款简洁大方圆领T恤5G561001 001JNBY江南布衣2016夏新商场同款简洁大方圆领T恤5G561001 001JNBY江南布衣2016夏新商场同款简洁大方圆领T恤5G561001 001
+                                </a>
+                            </li>
+                            <li class="shopping-bargain-price">
+                                现价:
+                                <i class="fa fa-jpy"></i>
+                                9.0
+                            </li>
+                            <li class="shopping-count">
+                                <div class="input-group input-group-sm col-xs-3 count-modify-msp">
+                                    <span class="input-group-addon">-</span>
+                                    <input type="text" name="count" class="form-control text-center" value="1">
+                                    <span class="input-group-addon">+</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="list-group-item list-group-item-msp msp-balance">
+                        <br>
+                        <p class="text-right">共6件商品</p>
+                        <p class="text-right">
+                            合计:
+                            <i class="fa fa-jpy text-danger">999.00</i>
+                        </p>
+                        <button class="btn btn-default btn-danger btn-lg pull-right">马上购买</button>
+                    </li>
+                </ul>
+    <!-- 底部的导航栏 -->
+    <nav class="navbar navbar-default navbar-fixed-bottom ">
+        <div class="container">
+            <div class="row">
+                <ul class="nav navbar-fixed-bottom-msp">
+                    <li role="presentation" class="col-xs-3">
+                        <a href="./index.html">
+                            <i class="fa fa-home fa-lg text-muted"></i>
+                        </a>
+                    </li>
+                    <li role="presentation" class="col-xs-3">
+                        <a href="./classify.html">
+                            <i class="fa fa-list-ul fa-lg text-muted"></i>
+                        </a>
+                    </li>
+                    <li role="presentation" class="col-xs-3 shopping-cart-msp">
+                        <a href="./shoppingCart.html">
+                            <i class="fa fa-shopping-cart fa-lg text-muted"></i>
+                            <span class="badge badge-msp">99</span>
+                        </a>
+                    </li>
+                    <li role="presentation" class="col-xs-3">
+                        <a href="./me.html">
+                            <i class="fa fa-user fa-lg text-muted"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</body>
+</html>

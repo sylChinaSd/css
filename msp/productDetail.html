@@ -1,0 +1,472 @@
+<!-- 首页 -->
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+
+    <link href="css/__main.css" rel="stylesheet">
+    <link href="css/bootstrapValidator.min.css" rel="stylesheet">
+
+    <script src="js/jquery-1.11.3.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrapValidator.min.js"></script>
+    <script src="js/jquery.touchSwipe.min.js"></script>
+    <script src="js/productDetail.js" type="text/javascript"></script>
+    <!--<script type="text/javascript">
+        var clientHeight=0;        
+        $(document).ready(function(){
+            $("#evaluation-ul").on("click",function(e){
+                var content = "";
+                if(e.target){
+                    //content=全部评论、好评、差评、有图
+                    content = e.target.textContent;
+                    //向后台请求对应的数据
+                }
+            });
+            //屏幕的高度
+             clientHeight = $(window).height(); 
+             //动态显示回到顶部按钮
+            $(window).on("scroll",function(){
+                var htmlHeight = document.body.scrollHeight||document.documentElement.scrollHeight;
+                var scrollTop = document.body.scrollTop||document.documentElement.scrollTop;
+                var gt = $("#goto-top");
+                if(scrollTop>clientHeight){
+                    if(gt.hasClass("hidden")){
+                        gt.removeClass("hidden");    
+                    }                    
+                }else{
+                    if(!gt.hasClass("hidden")){
+                        gt.addClass("hidden");    
+                    } 
+                }
+            });
+            //滑动轮播条的事件
+            $("#carousel1").swipe( {
+                //Generic swipe handler for all directions
+                swipe:function(event, direction, distance, duration, fingerCount, fingerData) {
+                    if(direction=="left"){
+                        $("#carousel1").carousel('next');
+                    }else if(direction=="right"){
+                        $("#carousel1").carousel('prev');
+                    }
+                },
+                //Default is 75px, set to 0 for demo so any distance triggers swipe
+               threshold:30
+            });
+            //加入购物车按钮 
+            $("#shopping-cart").popover({
+                //container:"li",
+                content:'成功加入购物车！',
+                trigger:"manual",
+                placement:"top",
+                template:'<div class="popover popover-msp" role="tooltip"><div class="arrow arrow-msp"></div><h3 class="popover-title"></h3><div class="popover-content popover-content-msp"></div></div>'
+            });         
+            $("#addBtn").on("click",function(){
+                //debugger;
+                $("#shopping-cart").popover("show");
+                setTimeout(function(){
+                    $("#shopping-cart").popover("hide");
+                },2000); 
+            }); 
+            //心型按钮，收藏作用
+            $("#heart").on("click",function(){
+                var icon = $("#heart").find("i:first");    
+                if(icon.length){
+                    if(icon.hasClass("fa-heart-o")){
+                        icon.removeClass("fa-heart-o").removeClass("text-muted").addClass("fa-heart").addClass("text-danger");
+                    }else if(icon.hasClass("fa-heart")){
+                        icon.removeClass("fa-heart").removeClass("text-danger").addClass("fa-heart-o").addClass("text-muted");
+                    }
+                }
+            });           
+        });
+    </script>-->
+    <title>MSP平台商品详情</title>
+</head>
+<body class="login-body msp-padding-bottom">
+    <!-- 顶部查询框 -->
+    <div class="container hidden">
+        <div class="row">
+            <div class="col-xs-12">
+                <form class="form-horizontal">
+                    <div class="form-group">
+                        <div class="col-xs-12">
+                            <img src="./images/logo.png" alt="logo.png"></div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- 顶部导航条 -->
+    <ul class="nav nav-pills nav-pills-msp" role="tablist">
+        <li role="presentation" class="active col-xs-4 bg-gray">
+            <a href="#tab1" aria-controls="tab1" role="tab" data-toggle="pill">商品</a>
+        </li>
+        <li role="presentation" class="col-xs-4 bg-gray">
+            <a href="#tab2" aria-controls="tab2" role="tab" data-toggle="pill">详情</a>
+        </li>
+        <li role="presentation" class="col-xs-4 bg-gray">
+            <a href="#tab3" aria-controls="tab3" role="tab" data-toggle="pill">评价</a>
+        </li>
+    </ul>
+
+    <div class="tab-content">
+        <!-- 商品基本信息 -->
+        <div role="tabpanel" class="tab-pane fade in active" id="tab1">
+            <!-- 图片轮播 -->
+            <div id="carousel1" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#carousel1" data-slide-to="0"  class="active"></li>
+                    <li data-target="#carousel1" data-slide-to="1"></li>
+                    <li data-target="#carousel1" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="item active">
+                        <img src="images/p1_detail1.jpg"></div>
+                    <div class="item">
+                        <img src="images/p1_detail2.jpg"></div>
+                    <div class="item">
+                        <img src="images/p1_detail3.jpg"></div>
+                </div>
+                <a class="carousel-control left" href="#carousel1" data-slide="prev">&lsaquo;</a>
+                <a class="carousel-control right" href="#carousel1" data-slide="next">&rsaquo;</a>
+            </div>
+            <!-- 商品尺寸、颜色等信息 -->
+            <ul class="list-group list-product-detail-msp">
+                <li class="list-group-item">
+                    <span class="small">
+                        JNBY江南布衣2016夏新商场同款简洁大方圆领T恤5G561001 001JNBY江南布衣2016夏新商场同款简洁大方圆领T恤5G561001
+                    </span>
+                    <p class="text-danger bargain-price"> <i class="fa fa-jpy"></i>
+                        269.00
+                        <button class="btn btn-default btn-sm-msp pull-right">
+                            <span class="text-muted">降价通知</span>
+                        </button>
+                    </p>
+                    <p class="text-muted small">七天无理由退换，支持货到付款</p>
+                </li>
+                <li class="list-group-item product-info-msp">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-xs-2">
+                                <span class="small text-muted">已选</span>
+                            </div>
+                            <div class="col-xs-10">
+                                <span class="small">双鱼M 1件</span>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-2">
+                                <span class="small text-muted">颜色</span>
+                            </div>
+                            <div class="col-xs-10">
+                                <div class="btn-group btn-group-xs btn-group-msp" role="group">
+                                    <button class="btn btn-default active-msp">双鱼</button>
+                                    <button class="btn btn-default">印花</button>
+                                    <button class="btn btn-default">黑色</button>
+                                    <button class="btn btn-default">青色</button>
+                                    <button class="btn btn-default">红色</button>
+                                    <button class="btn btn-default">纯棉</button>
+                                    <button class="btn btn-default">羊毛</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-2">
+                                <span class="small text-muted">尺寸</span>
+                            </div>
+                            <div class="col-xs-10">
+                                <div class="btn-group btn-group-xs btn-group-msp" role="group">
+                                    <button class="btn btn-default">LL</button>
+                                    <button class="btn btn-default">L</button>
+                                    <button class="btn btn-default active-msp">M</button>
+                                    <button class="btn btn-default">S</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-2">
+                                <span class="small text-muted">数量</span>
+                            </div>
+                            <div class="col-xs-10">
+                                <div class="input-group input-group-sm col-xs-4 count-modify-msp">
+                                    <span class="input-group-addon">-</span>
+                                    <input type="text" name="count" class="form-control text-center" value="1">
+                                    <span class="input-group-addon">+</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="list-group-item">
+                    <p>
+                        <span class="small text-muted">库存&nbsp;&nbsp;</span>
+                        <span class="small text-danger">0件</span>
+                    </p>
+                    <p>
+                        <span class="small text-muted">运费&nbsp;&nbsp;</span>
+                        <span class="small">免运费</span>
+                    </p>
+                    <p>
+                        <span class="small text-muted">服务&nbsp;&nbsp;</span>
+                        <span class="small">由XXX发货并提供售后服务</span>
+                    </p>
+                    <p>
+                        <span class="small text-muted">提示&nbsp;&nbsp;</span>
+                        <span class="small text-primary">支持7天无理由退换、支持货到付款</span>
+                    </p>
+                </li>
+                <li class="list-group-item small product-recommend">
+                    <div class="container">
+                        <span class="small text-muted">为你推荐</span>
+                        <div class="row">
+                            <div class="col-xs-4">
+                                <img src="./images/pd1.jpg">
+                                <p>
+                                    <a href="#">非常长的商品名称非常长的商品名称非常长的商品名称非常长的商品名称</a>
+                                </p>
+                                <p> <i class="fa fa-jpy"></i>
+                                    98.00
+                                </p>
+                            </div>
+                            <div class="col-xs-4">
+                                <img src="./images/pd2.jpg">
+                                <p>
+                                    <a href="#">商品名称的商品名</a>
+                                </p>
+                                <p>
+                                    <i class="fa fa-jpy"></i>
+                                    48.00
+                                </p>
+                            </div>
+                            <div class="col-xs-4">
+                                <img src="./images/pd3.jpg">
+                                <p>
+                                    <a href="#">商品名的商品名称的商品名</a>
+                                </p>
+                                <p>
+                                    <i class="fa fa-jpy"></i>
+                                    28.00
+                                </p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-4">
+                                <img src="./images/pd4.jpg">
+                                <p>
+                                    <a href="#">商品的商品名名称</a>
+                                </p>
+                                <p>
+                                    <i class="fa fa-jpy"></i>
+                                    98.00
+                                </p>
+                            </div>
+                            <div class="col-xs-4">
+                                <img src="./images/pd1.jpg">
+                                <p>
+                                    <a href="#">商的商品名品名称</a>
+                                </p>
+                                <p>
+                                    <i class="fa fa-jpy"></i>
+                                    90.00
+                                </p>
+                            </div>
+                            <div class="col-xs-4">
+                                <img src="./images/pd2.jpg">
+                                <p>
+                                    <a href="#">商的商品名品名称</a>
+                                </p>
+                                <p>
+                                    <i class="fa fa-jpy"></i>
+                                    91.00
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                </li>
+            </ul>
+        </div>
+        <!-- 商品详细信息 -->
+        <div role="tabpanel" class="tab-pane fade" id="tab2">
+            <ul class="nav nav-pills nav-pills-msp small" role="tablist">
+                <li role="presentation" class="active col-xs-4">
+                    <a href="#tab2-1" aria-controls="tab2-1" role="tab" data-toggle="pill" class="text-muted">商品介绍</a>
+                </li>
+                <li role="presentation" class="col-xs-4">
+                    <a href="#tab2-2" aria-controls="tab2-2" role="tab" data-toggle="pill" class="text-muted">规格参数</a>
+                </li>
+                <li role="presentation" class="col-xs-4">
+                    <a href="#tab2-3" aria-controls="tab2-3" role="tab" data-toggle="pill" class="text-muted">售后服务</a>
+                </li>
+            </ul>
+            <div class="tab-content">
+                <!-- 商品介绍 -->
+                <div role="tabpanel" class="tab-pane fade in active" id="tab2-1">
+                    <img src="./images/pd1.jpg" class="img-responsive img-thumbnail center-block" alt="pd1.jpg">
+                    <img src="./images/pd2.jpg" class="img-responsive img-thumbnail center-block" alt="pd2.jpg">
+                    <img src="./images/pd3.jpg" class="img-responsive img-thumbnail center-block" alt="pd3.jpg">
+                    <img src="./images/pd4.jpg" class="img-responsive img-thumbnail center-block" alt="pd4.jpg"></div>
+                <!-- 规格参数 -->
+                <div role="tabpanel" class="tab-pane fade" id="tab2-2">
+                    <img src="./images/pd1_gg.jpg" class="img-responsive img-thumbnail" alt="pd1_gg.jpg"></div>
+                <!-- 售后服务 -->
+                <div role="tabpanel" class="tab-pane fade small" id="tab2-3">
+                    <div class="container">
+                        <p>
+                            一、售后服务承诺
+                            1、质量保证：作为设备供应商---- ，我公司对本次投标所提供的产品均为厂家原厂原包装，符合同家 质量认证和 质量认证体系，并提供产品技术资料(包含安装说明书，产品装箱目录、产品口中文使用说明书、合格证及保修凭证等)。
+                            2、供货安装时间：桂林市讯创贸易有限公司在本次招标采购中若中标，在接到中标通知书后即向用户提供货物。产品的制造和检测均有质量记录和检测资料。对产品性能的检测，我们已对产品进行全过程、全性能检查，待产品被确认合格后才装箱发货。
+                            3、产品交货期：尽量按用户要求，若有特殊要求，需提前完工的，我公司可特别组织生产、安装，力争满足用户需求。
+                            4、保修承诺：我司对本次协议供货有效期内所提供的所有产品保质期 ，有效期内所提供的所有产品，提供正常工作日全天侯服务，终身技术服务支持。
+                            5、响应时间：若在七个工作日内发生质量问题或操作上对用户造成不便影响，本公司承诺在三个工作日内对设备进行免费更换。保修期内，产品若发生故障，在接到贵公司报修后，如有需要我司将提供代用设备。保修期内因设备性能故障维修两次仍不能正常使用的，我司无偿更换新设备。
+                            6、服务体系：作为设备供应商本公司对本次招标所提供的产品提供保障体系： 当设备出现故障，必要时将派指定的专业技术员在规定时间内上门维修或寄修，费购货方愿意产生的运杂费由本公司承担。
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 商品评价信息 -->
+        <div role="tabpanel" class="tab-pane fade" id="tab3">
+            <ul id="evaluation-ul" class="nav nav-pills nav-pills-msp small" role="tablist">
+                <li role="presentation" class="active col-xs-3">
+                    <a href="#" role="tab" data-toggle="pill" class="text-muted">全部</a>
+                </li>
+                <li role="presentation" class="col-xs-3">
+                    <a href="#" role="tab" data-toggle="pill" class="text-muted">好评</a>
+                </li>
+                <li role="presentation" class="col-xs-3">
+                    <a href="#" role="tab" data-toggle="pill" class="text-muted">差评</a>
+                </li>
+                <li role="presentation" class="col-xs-3">
+                    <a href="#" role="tab" data-toggle="pill" class="text-muted">有图</a>
+                </li>
+            </ul>
+            <ul class="list-group small">
+                <li class="list-group-item">
+                    <img src="./images/user.jpg" class="img-circle evaluation-user">
+                    <span>J**90</span>
+                    <img src="./images/user-level.jpg" class="evaluation-user-level">
+                    <span class="text-muted pull-right">2016-06-15 12:00:00</span>
+                </li>
+                <li class="list-group-item">
+                    <p class="text-danger">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o"></i>
+                        <i class="fa fa-star-o"></i>
+                        <i class="fa fa-star-o"></i>
+                    </p>
+                    <p>
+                        一般般啦，与商品描述不符，材质差！
+                        <br>
+                        <img src="./images/user-level.jpg" class="img-thumbnail evaluation-user-img">
+                        <img src="./images/user-level.jpg" class="img-thumbnail evaluation-user-img">
+                        <img src="./images/user-level.jpg" class="img-thumbnail evaluation-user-img">
+                        <img src="./images/user-level.jpg" class="img-thumbnail evaluation-user-img"></p>
+
+                    <p>
+                        <span class="text-muted">购买时间:2016-06-13 14:12:06</span>
+                        <br>
+                        <span class="text-muted">颜色:双鱼&nbsp;&nbsp;尺寸:M</span>
+                    </p>
+                </li>
+                <!-- 添加评论的间隔空间 -->
+                <li class="list-group-item bg-gray"></li>
+                <li class="list-group-item">
+                    <img src="./images/user.jpg" class="img-circle evaluation-user">
+                    <span>J**90</span>
+                    <img src="./images/user-level.jpg" class="evaluation-user-level">
+                    <span class="text-muted pull-right">2016-06-15 12:00:00</span>
+                </li>
+                <li class="list-group-item">
+                    <p class="text-danger">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </p>
+                    <p>
+                        一般般啦，与商品描述不符，材质差！
+                        <br></p>
+
+                    <p>
+                        <span class="text-muted">购买时间:2016-06-13 14:12:06</span>
+                        <br>
+                        <span class="text-muted">颜色:双鱼&nbsp;&nbsp;尺寸:M</span>
+                    </p>
+                </li>
+                <!-- 添加评论的间隔空间 -->
+                <li class="list-group-item bg-gray"></li>
+                <li class="list-group-item">
+                    <img src="./images/user.jpg" class="img-circle evaluation-user">
+                    <span>J**90</span>
+                    <img src="./images/user-level.jpg" class="evaluation-user-level">
+                    <span class="text-muted pull-right">2016-06-15 12:00:00</span>
+                </li>
+                <li class="list-group-item">
+                    <p class="text-danger">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o"></i>
+                    </p>
+                    <p>
+                        一般般啦，与商品描述不符，材质差！
+                        <br></p>
+                    <p>
+                        <span class="text-muted">购买时间:2016-06-13 14:12:06</span>
+                        <br>
+                        <span class="text-muted">颜色:双鱼&nbsp;&nbsp;尺寸:M</span>
+                    </p>
+                </li>
+                <!-- 添加评论的间隔空间 -->
+                <li class="list-group-item bg-gray"></li>
+                <li class="list-group-item text-center">
+                    <span class="text-muted">已经没有更多啦！</span>
+                </li>
+            </ul>
+
+        </div>
+    </div>
+    <!-- 返回顶部 -->
+    <a id="goto-top" href="#" class="btn btn-default btn-sm goto-top hidden">
+        <i class="fa fa-arrow-circle-up fa-2x"></i>
+    </a>
+    <!-- 底部的导航栏 -->
+    <nav class="navbar navbar-default navbar-fixed-bottom">
+        <div class="container">
+            <div class="row">
+                <ul class="nav navbar-fixed-bottom-msp">
+                    <li id="heart" role="presentation" class="col-xs-2 nav-btn-sm">
+                        <a>
+                            <i class="fa fa-heart-o fa-lg text-muted"></i>
+                        </a>
+                    </li>
+                    <li id="shopping-cart" role="presentation" class="col-xs-2 nav-btn-sm shopping-cart-msp">
+                        <a href="./shoppingCart.html">
+                            <i class="fa fa-shopping-cart fa-lg text-muted"></i>
+                            <span class="badge badge-msp">99</span>
+                        </a>
+                    </li>
+                    <li id="addBtn" role="presentation" class="col-xs-4 nav-btn-warning-msp">
+                        <a>
+                            <span class="text-larger">加入购物车</span>
+                        </a>
+                    </li>
+                    <li id="buyBtn" role="presentation" class="col-xs-4 nav-btn-danger-msp">
+                        <a>
+                            <span class="text-larger">立即购买</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</body>
+</html>

@@ -1,0 +1,163 @@
+<!-- 首页 -->
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+
+    <link href="css/__main.css" rel="stylesheet">
+    <link href="css/bootstrapValidator.min.css" rel="stylesheet">
+
+    <script src="js/jquery-1.11.3.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrapValidator.min.js"></script>
+    <script src="js/addressManage.js" type="text/javascript"></script>
+    <!--
+    <script type="text/javascript">
+        var clientHeight=0;        
+        $(document).ready(function(){
+            clientHeight = $(window).height(); 
+            $(window).on("scroll",function(){
+                var htmlHeight = document.body.scrollHeight||document.documentElement.scrollHeight;
+                var scrollTop = document.body.scrollTop||document.documentElement.scrollTop;
+                var tip = $("#tip");
+                if(tip.hasClass("hidden")){
+                    tip.removeClass("hidden");
+                }
+                if(Math.abs(scrollTop+clientHeight-htmlHeight)==0&&tip.hasClass("hidden")){  
+                     tip.removeClass("hidden");
+                } 
+            });
+            //顶部的导航栏
+            $("#topNav").on("click",function(e){
+                var parent = $(e.target).closest("li");
+                //点击的类型
+                var type="";
+                if(parent.length){
+                    if(!parent.hasClass("active-red")){
+                        parent.addClass("active-red");
+                        type = $.trim(e.target.textContent);
+                    }
+                }
+                var siblings = parent.siblings();
+                if(siblings.length){
+                    for(var i = 0;i<siblings.length;++i){
+                        var li = $(siblings[i]);
+                        if(li.hasClass("active-red")){
+                            li.removeClass("active-red");
+                        }
+                    }
+                }
+                
+            });
+        });        
+    </script> -->
+    <title>收货地址管理</title>
+</head>
+
+<body id="mainBody" class="login-body msp-padding-bottom">
+    <!-- 顶部查询框 -->
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <form class="form-horizontal">
+                    <div class="form-group">
+                        <div class="col-xs-12">
+                            <img src="./images/logo2.png" alt="logo2.png"></div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- 显示已经添加的地址列表 -->
+    <div class="container">
+        <ul class="list-group address-list">
+            <li class="list-group-item">
+                <div>
+                    <span class="pull-left">地址奉承长的地址名称地址奉承长的地址名称地址奉承长的地址名称地址奉承长的地址名称</span>
+                    <a href="./addressEdit.html" class="text-danger"> <i class="fa fa-pencil fa-lg pull-right"></i>
+                    </a>
+                </div>
+                <div>
+                    <span class="pull-left text-muted small">姓名&nbsp;&nbsp;手机</span>
+                </div>
+            </li>
+            <li class="list-group-item">
+                <div>
+                    <span class="pull-left">地址奉承长的地址名称地址奉承长的地址名称地址奉承长的地址名称地址奉承长的地址名称</span>
+                    <a href="./addressEdit.html" class="text-danger"> <i class="fa fa-pencil fa-lg pull-right"></i>
+                    </a>
+                </div>
+                <div>
+                    <span class="pull-left text-muted small">姓名&nbsp;&nbsp;手机</span>
+                </div>
+            </li>
+            <li class="list-group-item">
+                <div>
+                    <span class="pull-left">地址奉承长的地址名称地址奉承长的地址名称地址奉承长的地址名称地址奉承长的地址名称</span>
+                    <a href="./addressEdit.html" class="text-danger">
+                        <i class="fa fa-pencil fa-lg pull-right"></i>
+                    </a>
+                </div>
+                <div>
+                    <span class="pull-left text-muted small">姓名&nbsp;&nbsp;手机</span>
+                </div>
+            </li>
+            <li class="list-group-item">
+                <div>
+                    <span class="pull-left">地址奉承长的地址名称地址奉承长的地址名称地址奉承长的地址名称地址奉承长的地址名称</span>
+                    <a href="./addressEdit.html" class="text-danger">
+                        <i class="fa fa-pencil fa-lg pull-right"></i>
+                    </a>
+                </div>
+                <div>
+                    <span class="pull-left text-muted small">姓名&nbsp;&nbsp;手机</span>
+                </div>
+            </li>
+            <!-- 新增收货地址的连接 -->
+            <li class="list-group-item">
+                <div>
+                    <span class="pull-left">新增地址</span>
+                    <a href="./addressAdd.html" class="text-primary">
+                        <i class="fa fa-plus-circle fa-lg pull-right"></i>
+                    </a>
+                </div>
+
+            </li>
+        </ul>
+    </div>
+    <!-- 底部的导航栏 -->
+    <nav class="navbar navbar-default navbar-fixed-bottom ">
+        <div class="container">
+            <div class="row">
+                <ul class="nav navbar-fixed-bottom-msp">
+                    <li role="presentation" class="col-xs-3">
+                        <a href="./classify.html">
+                            <i class="fa fa-list-ul fa-lg text-muted"></i>
+                        </a>
+                    </li>
+                    <li role="presentation" class="col-xs-3 shopping-cart-msp">
+                        <a href="./shoppingCart.html">
+                            <i class="fa fa-shopping-cart fa-lg text-muted"></i>
+                            <span class="badge badge-msp">99</span>
+                        </a>
+                    </li>
+                    <li role="presentation" class="col-xs-3">
+                        <a href="./concern.html">
+                            <i class="fa fa-heart fa-lg text-danger"></i>
+                        </a>
+                    </li>
+                    <li role="presentation" class="col-xs-3">
+                        <a href="./me.html">
+                            <i class="fa fa-user fa-lg text-muted"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</body>
+</html>
